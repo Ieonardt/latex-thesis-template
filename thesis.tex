@@ -1,7 +1,7 @@
 \documentclass{scrbook}
 
-\input{style}
-\input{macros}
+\input{config/style}
+\input{config/macros}
 
 % Set title and author used in the PDF meta data
 \hypersetup{
@@ -11,17 +11,17 @@
 
 % Depending on which of the following two color schemes you import your thesis will be in color or grayscale. I recommend to generate a colored version as a PDF and a grayscale version for printing.
 
-\input{schema-color}
-%\input{schema-gray}
+\input{config/schema-color}
+%\input{config/schema-gray}
 
 \newcommand{\duedate}{15. Juli 2016}
 
 \begin{document}
   \frontmatter
-  \include{title}
-  \include{declaration}
+  \include{pages/title}
+  \include{pages/declaration}
 
-  \include{abstract}
+  \include{pages/abstract}
 
   \cleardoublepage
   \phantomsection
@@ -37,15 +37,15 @@
   \listoftodos[\listtodoname]
 
   \mainmatter
-  \include{einleitung}
-  \include{grundlagen}
-  \include{konzept}
-  \include{evaluation}
-  \include{fazit}
+  \include{pages/einleitung}
+  \include{pages/grundlagen}
+  \include{pages/konzept}
+  \include{pages/evaluation}
+  \include{pages/fazit}
 
   \appendix
 
-  \include{appendix}
+  \include{pages/appendix}
 
   \backmatter
 
@@ -70,7 +70,7 @@
   \pdfbookmark{\lstlistlistingname}{listoflistings}
   \lstlistoflistings
 
-  \include{abkuerzungen}
+  \include{pages/abkuerzungen}
 
   \cleardoublepage
   \phantomsection
