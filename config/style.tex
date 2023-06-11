@@ -3,11 +3,18 @@
 % Set german to default language and load english as well
 \usepackage[english,ngerman]{babel}
 
+% USE ONLY WHEN NOT COMPILED WITH XELATEX
+%%%
 % Set UTF8 as input encoding
-\usepackage[utf8]{inputenc}
+% \usepackage[utf8]{inputenc}
 
 % Set T1 as font encoding
-\usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
+%%%
+
+% package for quotes, quote mark style is set depending on the default babel language
+\usepackage{csquotes}
+
 % Load a slightly more modern font
 \usepackage{lmodern}
 % Use the symbol collection textcomp, which is needed by listings.
@@ -20,7 +27,7 @@
 % Set some options regarding the document layout. See KOMA guide
 \KOMAoptions{%
   paper=a4,
-  fontsize=12pt,
+  fontsize=11pt,
   parskip=half,
   headings=normal,
   BCOR=1cm,
@@ -37,8 +44,10 @@
 \setkomafont{captionlabel}{\bfseries}
 \setcapwidth[c]{0.9\textwidth}
 
-% set the style of the bibliography
-\bibliographystyle{alphadin}
+% set the style of the bibliography to apa7
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{literature.bib}
+
 
 % load extended tabulars used in the list of abbreviation
 \usepackage{tabularx}
@@ -75,9 +84,6 @@
 \setkomafont{pagenumber}{\normalfont\sffamily\color{maincolor}}
 \setkomafont{pageheadfoot}{\normalfont\sffamily}
 \setkomafont{headsepline}{\color{maincolor}}
-
-% German guillemets quotes
-\usepackage[german=guillemets]{csquotes}
 
 % load TikZ to draw diagrams
 \usepackage{tikz}
