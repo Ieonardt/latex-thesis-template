@@ -1,10 +1,17 @@
 # Thesis Template
 
-Ein LaTeX Template für Abschluss- und Hausarbeiten. Angelehnt an die offizielle Vorlage der Universität zu Lübeck für MINT Fächer.
+Ein LaTeX Template für Abschluss- und Hausarbeiten. 
 
-Dieses Template ist **keine** offizielle Vorlage. Es handelt sich lediglich um eine abgewandelte Version der [**offizielle Vorlage**](https://www.inb.uni-luebeck.de/mitarbeiter/infos-downloads-abschlussarbeiten.html).
+Dieses Template ist **keine** offizielle Vorlage. Es handelt sich lediglich um eine an die [**offizielle Vorlage**](https://www.inb.uni-luebeck.de/mitarbeiter/infos-downloads-abschlussarbeiten.html) angelehnte Variante.
 
-Da für Zitationen biblatex verwendet wird, muss der Editor konfiguriert werden. Anleitungen für verschiedene Editoren sind 
+Das Template ist eine für Medieninformatiker:innen angepasste Version der [Vorlage](https://github.com/malteschmitz/latex-thesis) 
+von [Malte Schmitz](https://github.com/malteschmitz).<br>
+Geändert wurde:
+- der Zitationsstil (ist jetzt apa7)
+- das Layout der Titelseite (ist jetzt zentriert)
+- die maincolor (entspricht jetzt der corporate design Farbe der Uni Lübeck)
+
+Da für Zitationen biblatex verwendet wird, muss der Texteditor evtl. konfiguriert werden. Anleitungen für verschiedene Texteditoren sind 
 [hier](https://tex.stackexchange.com/questions/154751/biblatex-with-biber-configuring-my-editor-to-avoid-undefined-citations) zu finden.
 
 Für VSCode folgenden Code in die settings.json einfügen:
